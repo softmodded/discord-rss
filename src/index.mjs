@@ -21,7 +21,7 @@ const client = new SapphireClient({
 	loadMessageCommandListeners: true,
 	api: {
 		listenOptions: {
-			port: 3000
+			port: 4000
 		}
 	}
 });
@@ -31,6 +31,7 @@ const main = async () => {
 		client.logger.info('Logging in');
 		await client.login(config.discord_token);
 		client.logger.info('Logged in');
+		client.user.setActivity({ name: "rss" })
 		connect();
 	} catch (error) {
 		client.logger.fatal(error);
