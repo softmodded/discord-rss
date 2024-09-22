@@ -1,5 +1,5 @@
 import '#lib/setup';
-import config from '#rootJson/config' assert { type: 'json' };
+import config from '#rootJson/config';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 import { GatewayIntentBits, Partials } from 'discord.js';
 import { connect, disconnect } from './database/mongo.mjs';

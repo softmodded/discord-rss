@@ -1,5 +1,5 @@
 import mongoose, { Mongoose } from 'mongoose';
-import config from '#rootJson/config' assert { type: 'json' };
+import config from '#rootJson/config';
 
 
 // mongo kind of sucks but it's late at night and i don't want to deal with prisma and postgres
